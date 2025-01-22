@@ -1,0 +1,48 @@
+@media (max-width: 300px) {
+    
+
+    .picture img {
+        height: 150px;
+        width: auto;
+        
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+      width: 25rem;
+    }
+    .name{
+      font-size: 3rem;
+    }
+    .title{
+      font-size: 2rem;
+    }
+  }
+  
+  /* For the smallest screens: 1 card per row */
+  @media (max-width: 576px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .card{
+      width: 20rem;
+    }
+    .profile-container{
+      flex-direction: column;
+    }
+    .profile-container >div{
+      width: 100%;
+    }
+    .name{
+      font-size: 1.5rem;
+    }
+    .title{
+      font-size: 1rem;
+    }
+  }
